@@ -1,0 +1,26 @@
+<%- include('head.ejs') %>
+
+<body>
+    <div id="main-div">
+
+        <div id="chat-window">
+            <div id="chat-wall"></div>
+            <div id="userIsTyping-field"></div>
+        </div>
+
+        <input id="user-name" type="text" placeholder="<%= name %>" value="<%= name %>" disabled><br>
+        <input id="user-input" type="text" placeholder="Pisz tutaj..."><br>
+        <button type="send-button" class="btn btn-primary" id="send-button">Wyślij wiadomość</button>
+        <br><br>
+        <form action="/logout?_method=DELETE" method="post">
+            <button  type="submit" class="btn btn-secondary"> Wyloguj się</button>
+        </form>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script defer src="/chatIndex.js">
+        
+    </script>
+</body>
+
+</html>

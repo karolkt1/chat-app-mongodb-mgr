@@ -1,0 +1,23 @@
+<%- include('head.ejs') %>
+
+
+<form action="/login" method="post" id='main-div'>
+    <h1 style=" text-align: center;">Logowanie</h1>
+    <h3 style = "text-align: center;" class="text-danger">
+        <% if (messages.error) {%>
+        <%= messages.error %>
+        <% } %>
+    </h3>
+    <hr>
+    <div>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+        <label for="password">Hasło</label>
+        <input type="text" name="password" id="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary"> Zaloguj się</button>
+    <br><br>
+    <a style="font-size: 20px;" href="/register">Rejestracja</a>
+</form>
