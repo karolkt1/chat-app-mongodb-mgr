@@ -1,1 +1,1 @@
-# chat-app-mongodb-mgr
+Aplikacja Chat stanowiąca praktyczną część pracy magisterskiej
