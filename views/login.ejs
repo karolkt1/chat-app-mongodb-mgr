@@ -1,6 +1,6 @@
 <%- include('head.ejs') %>
 
-
+<div class="wrap-login100">
 <form action="/login" method="post" id='main-div'>
     <h1 style=" text-align: center;">Logowanie</h1>
     <h3 style = "text-align: center;" class="text-danger">
@@ -11,13 +11,14 @@
     <hr>
     <div>
         <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" placeholder="Wpisz adres e-mail"required>
     </div>
     <div>
         <label for="password">Hasło</label>
-        <input type="text" name="password" id="password" required>
+        <input type="text" name="password" id="password"placeholder="Wpisz hasło" required>
     </div>
     <button type="submit" class="btn btn-primary"> Zaloguj się</button>
     <br><br>
     <a style="font-size: 20px;" href="/register">Rejestracja</a>
 </form>
+</div>

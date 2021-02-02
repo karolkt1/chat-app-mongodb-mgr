@@ -1,20 +1,38 @@
-body{
-    font-family: 'Segoe UI Regular WestEuropean', 'Segoe UI';
-    font-size: 50;
-}
-
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('./poppins/Poppins-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../poppins/Poppins-SemiBold.ttf'); 
+  }
 #main-div{
     max-width: 600px;
     margin: 30px auto;
-    border: 1px solid gray;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
-    border-radius: 2px;
+    border: 2px solid lightgrey;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.05);
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 7px 5px 3px 5px;
+    font-family: Poppins-Regular, sans-serif;
+  
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
 }
 
 #chat-window{
     height: 400px;
     overflow: auto;
     background: #eeeded;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
 }
 
 
@@ -22,6 +40,7 @@ label{
     box-sizing: border-box;
     display: block;
     padding: 10px 20px;
+    font-family: Poppins-SemiBold;
 }
 
 input{
